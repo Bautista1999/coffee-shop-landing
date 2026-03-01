@@ -1,6 +1,9 @@
 // Coffee Shop Landing Page - Main Script
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Prevent horizontal scrolling
+    preventHorizontalScroll();
+
     // Smooth scroll behavior for navigation links
     const navLinks = document.querySelectorAll('.nav-links a');
     
@@ -56,4 +59,67 @@ document.addEventListener('DOMContentLoaded', function() {
         item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
         observer.observe(item);
     });
+
+    // Handle responsive viewport adjustments
+    handleResponsiveViewport();
+    window.addEventListener('resize', handleResponsiveViewport);
 });
+
+/**
+ * Prevent horizontal scrolling on mobile devices
+ */
+function preventHorizontalScroll() {
+    // Ensure body and html don't exceed viewport width
+    document.documentElement.style.maxWidth = '100vw';
+    document.documentElement.style.overflowX = 'hidden';
+    document.body.style.maxWidth = '100vw';
+    document.body.style.overflowX = 'hidden';
+
+    // Disable horizontal scroll on touch devices
+    document.addEventListener('touchmove', function(e) {
+        if (e.touches.length > 1) {
+            e.preventDefault();
+        }
+    }, { passive: true });
+}
+
+/**
+ * Handle responsive viewport adjustments
+ */
+function handleResponsiveViewport() {
+    const width = window.innerWidth;
+    
+    // Log viewport width in development (for testing)
+    // console.log('Viewport width: ' + width);
+
+    // Adjust body overflow
+    if (width <= 480) {
+        document.body.style.fontSize = '14px';
+    } else if (width <= 768) {
+        document.body.style.fontSize = '15px';
+    } else {
+        document.body.style.fontSize = '16px';
+    }
+}
+
+/**
+ * Handle form submission (for contact form)
+ */
+function handleFormSubmission(event) {
+    if (event.target.name === 'contactForm') {
+        event.preventDefault();
+        
+        const formData = new FormData(event.target);
+        const data = Object.fromEntries(formData);
+        
+        // Log form data (in production, send to backend)
+        console.log('Form submitted with data:', data);
+        
+        // Show success message
+        alert('Thank you for your message! We will get back to you within 24 hours.');
+        event.target.reset();
+    }
+}
+
+// Attach form submission handler
+document.addEventListener('submit', handleFormSubmission);
