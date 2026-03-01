@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <!-- Background -->
+  <rect width="300" height="300" fill="#F5E6D3" rx="12"/>
+  
+  <!-- Decorative Corner Elements -->
+  <circle cx="20" cy="20" r="3" fill="#D4A574" opacity="0.3"/>
+  <circle cx="280" cy="20" r="3" fill="#D4A574" opacity="0.3"/>
+  <circle cx="20" cy="280" r="3" fill="#D4A574" opacity="0.3"/>
+  <circle cx="280" cy="280" r="3" fill="#D4A574" opacity="0.3"/>
+  
+  <defs>
+    <linearGradient id="espressoGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3D2817;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2C1810;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Small Espresso Cup -->
+  <g>
+    <!-- Cup Body -->
+    <path d="M 90 80 L 95 210 Q 95 220 105 220 L 195 220 Q 205 220 205 210 L 210 80 Z" 
+          fill="#F5E6D3" stroke="#6F4E37" stroke-width="2"/>
+    
+    <!-- Cup Handle -->
+    <path d="M 210 100 Q 235 100 235 150 Q 235 200 210 200" 
+          fill="none" stroke="#6F4E37" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Espresso inside -->
+    <ellipse cx="150" cy="210" rx="52" ry="8" fill="url(#espressoGradient)"/>
+    <path d="M 98 85 L 103 210 Q 103 215 110 215 L 190 215 Q 197 215 202 210 L 207 85 Z" 
+          fill="url(#espressoGradient)"/>
+    
+    <!-- Crema Layer (Espresso Foam) -->
+    <ellipse cx="150" cy="85" rx="55" ry="10" fill="#A0826D" opacity="0.6"/>
+    
+    <!-- Saucer -->
+    <ellipse cx="150" cy="225" rx="70" ry="12" fill="#E8DCC8" stroke="#6F4E37" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Text Label -->
+  <text x="150" y="260" font-family="Georgia, serif" font-size="20" font-weight="bold" 
+        text-anchor="middle" fill="#6F4E37">ESPRESSO</text>
+  
+  <!-- Decorative Elements -->
+  <circle cx="50" cy="50" r="25" fill="none" stroke="#D4A574" stroke-width="1" opacity="0.2"/>
+  <circle cx="250" cy="250" r="30" fill="none" stroke="#D4A574" stroke-width="1" opacity="0.2"/>
+</svg>

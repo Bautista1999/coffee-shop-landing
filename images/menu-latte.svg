@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <!-- Background -->
+  <rect width="300" height="300" fill="#F5E6D3" rx="12"/>
+  
+  <!-- Decorative Corner Elements -->
+  <circle cx="20" cy="20" r="3" fill="#D4A574" opacity="0.3"/>
+  <circle cx="280" cy="20" r="3" fill="#D4A574" opacity="0.3"/>
+  <circle cx="20" cy="280" r="3" fill="#D4A574" opacity="0.3"/>
+  <circle cx="280" cy="280" r="3" fill="#D4A574" opacity="0.3"/>
+  
+  <defs>
+    <linearGradient id="latteGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#9B8B7D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7D6B5C;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Glass-like Latte Cup -->
+  <g>
+    <!-- Cup Body (Tall Glass) -->
+    <path d="M 80 60 L 88 215 Q 88 225 100 225 L 200 225 Q 212 225 212 215 L 220 60 Z" 
+          fill="#F5E6D3" stroke="#6F4E37" stroke-width="2" opacity="0.8"/>
+    
+    <!-- Cup Handle -->
+    <path d="M 220 80 Q 255 80 255 145 Q 255 210 220 210" 
+          fill="none" stroke="#6F4E37" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Coffee/Milk layers -->
+    <ellipse cx="150" cy="225" rx="62" ry="9" fill="url(#latteGradient)"/>
+    <path d="M 90 65 L 95 220 Q 95 223 105 223 L 195 223 Q 205 223 210 220 L 218 65 Z" 
+          fill="url(#latteGradient)"/>
+    
+    <!-- Steamed Milk - Large Layer -->
+    <ellipse cx="150" cy="85" rx="62" ry="22" fill="#D9C5B8" opacity="0.6"/>
+    <ellipse cx="150" cy="75" rx="62" ry="18" fill="#E8DCC8" opacity="0.5"/>
+    
+    <!-- Latte Art Circle -->
+    <circle cx="150" cy="65" r="20" fill="none" stroke="#A0826D" stroke-width="2" opacity="0.7"/>
+    
+    <!-- Foam Details -->
+    <circle cx="130" cy="55" r="5" fill="#F5E6D3" opacity="0.8"/>
+    <circle cx="170" cy="55" r="5" fill="#F5E6D3" opacity="0.8"/>
+    <circle cx="145" cy="45" r="4" fill="#F5E6D3" opacity="0.7"/>
+    <circle cx="155" cy="45" r="4" fill="#F5E6D3" opacity="0.7"/>
+    
+    <!-- Saucer -->
+    <ellipse cx="150" cy="230" rx="80" ry="14" fill="#E8DCC8" stroke="#6F4E37" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Text Label -->
+  <text x="150" y="270" font-family="Georgia, serif" font-size="20" font-weight="bold" 
+        text-anchor="middle" fill="#6F4E37">LATTE</text>
+  
+  <!-- Decorative Elements -->
+  <circle cx="50" cy="50" r="25" fill="none" stroke="#D4A574" stroke-width="1" opacity="0.2"/>
+  <circle cx="250" cy="250" r="30" fill="none" stroke="#D4A574" stroke-width="1" opacity="0.2"/>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <!-- Background -->
+  <rect width="300" height="300" fill="#F5E6D3" rx="12"/>
+  
+  <!-- Decorative Corner Elements -->
+  <circle cx="20" cy="20" r="3" fill="#D4A574" opacity="0.3"/>
+  <circle cx="280" cy="20" r="3" fill="#D4A574" opacity="0.3"/>
+  <circle cx="20" cy="280" r="3" fill="#D4A574" opacity="0.3"/>
+  <circle cx="280" cy="280" r="3" fill="#D4A574" opacity="0.3"/>
+  
+  <defs>
+    <linearGradient id="mochaGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5C4A3A;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4A3A2A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2C1810;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="whippedCream" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#F5E6D3;stop-opacity:0.7" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Tall Mocha Cup -->
+  <g>
+    <!-- Cup Body -->
+    <path d="M 82 60 L 90 210 Q 90 225 105 225 L 195 225 Q 210 225 210 210 L 218 60 Z" 
+          fill="#F5E6D3" stroke="#6F4E37" stroke-width="2"/>
+    
+    <!-- Cup Handle -->
+    <path d="M 218 80 Q 250 80 250 145 Q 250 210 218 210" 
+          fill="none" stroke="#6F4E37" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Mocha Coffee Layer -->
+    <ellipse cx="150" cy="225" rx="60" ry="9" fill="url(#mochaGradient)"/>
+    <path d="M 92 65 L 98 218 Q 98 223 108 223 L 192 223 Q 202 223 208 218 L 216 65 Z" 
+          fill="url(#mochaGradient)"/>
+    
+    <!-- Steamed Milk Layer -->
+    <ellipse cx="150" cy="90" rx="60" ry="20" fill="#D4A574" opacity="0.5"/>
+    <ellipse cx="150" cy="78" rx="60" ry="16" fill="#C9B5A8" opacity="0.6"/>
+    
+    <!-- Whipped Cream Topping -->
+    <ellipse cx="150" cy="60" rx="60" ry="25" fill="url(#whippedCream)"/>
+    
+    <!-- Cream Swirls -->
+    <path d="M 130 45 Q 140 35 150 42" fill="none" stroke="#E8DCC8" stroke-width="2" opacity="0.7"/>
+    <path d="M 170 45 Q 160 35 150 42" fill="none" stroke="#E8DCC8" stroke-width="2" opacity="0.7"/>
+    
+    <!-- Chocolate Drizzle -->
+    <path d="M 145 65 L 142 55 M 150 65 L 150 50 M 155 65 L 158 55" 
+          stroke="#4A3728" stroke-width="1.5" fill="none" opacity="0.8"/>
+    
+    <!-- Saucer -->
+    <ellipse cx="150" cy="230" rx="80" ry="14" fill="#E8DCC8" stroke="#6F4E37" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Text Label -->
+  <text x="150" y="270" font-family="Georgia, serif" font-size="20" font-weight="bold" 
+        text-anchor="middle" fill="#6F4E37">MOCHA</text>
+  
+  <!-- Decorative Elements -->
+  <circle cx="50" cy="50" r="25" fill="none" stroke="#D4A574" stroke-width="1" opacity="0.2"/>
+  <circle cx="250" cy="250" r="30" fill="none" stroke="#D4A574" stroke-width="1" opacity="0.2"/>
+</svg>

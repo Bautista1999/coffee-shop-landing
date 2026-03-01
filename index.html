@@ -8,6 +8,10 @@
     <meta name="author" content="Coffee Shop">
     <title>Coffee Shop - Artisanal Coffee Blends</title>
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Preload hero background for faster LCP -->
+    <link rel="preload" as="image" href="images/hero-background.svg">
+    <!-- Preload logo for header -->
+    <link rel="preload" as="image" href="images/logo.svg">
 </head>
 <body>
     <!-- Header with Navigation -->
@@ -15,7 +19,10 @@
         <nav class="navbar">
             <div class="container">
                 <div class="nav-wrapper">
-                    <h1 class="logo">☕ Coffee Shop</h1>
+                    <a href="#home" class="logo-link">
+                        <img src="images/logo.svg" alt="Coffee Shop Logo" class="logo-image" width="50" height="50" loading="eager">
+                        <span class="logo-text">Coffee Shop</span>
+                    </a>
                     <ul class="nav-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
@@ -28,8 +35,8 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
+        <!-- Hero Section with Background Image -->
+        <section id="home" class="hero" style="background-image: url('images/hero-background.svg');">
             <div class="hero-content">
                 <h2>Discover Premium Coffee</h2>
                 <p>Experience the finest artisanal coffee blends crafted for coffee lovers.</p>
@@ -61,43 +68,102 @@
             </div>
         </section>
 
-        <!-- Menu Preview Section -->
+        <!-- Menu Preview Section with Images -->
         <section id="menu" class="menu">
             <div class="container">
                 <h2>Our Menu</h2>
                 <p class="menu-intro">Explore our signature coffee beverages crafted with care</p>
                 <div class="menu-items">
                     <article class="menu-item">
+                        <figure class="menu-item-image">
+                            <img 
+                                src="images/menu-espresso.svg" 
+                                alt="Espresso - Rich and bold single-shot espresso" 
+                                width="280" 
+                                height="280"
+                                loading="lazy"
+                            >
+                        </figure>
                         <h3>Espresso</h3>
                         <p class="description">Rich and bold</p>
                         <p class="details">Our signature single-shot espresso with intense flavor and smooth crema.</p>
                         <span class="price">$3.50</span>
                     </article>
+
                     <article class="menu-item">
+                        <figure class="menu-item-image">
+                            <img 
+                                src="images/menu-cappuccino.svg" 
+                                alt="Cappuccino - Creamy and smooth espresso with steamed milk and foam" 
+                                width="280" 
+                                height="280"
+                                loading="lazy"
+                            >
+                        </figure>
                         <h3>Cappuccino</h3>
                         <p class="description">Creamy and smooth</p>
                         <p class="details">Perfect balance of espresso, steamed milk, and velvety foam.</p>
                         <span class="price">$4.50</span>
                     </article>
+
                     <article class="menu-item">
+                        <figure class="menu-item-image">
+                            <img 
+                                src="images/menu-latte.svg" 
+                                alt="Latte - Mild and velvety coffee with steamed milk" 
+                                width="280" 
+                                height="280"
+                                loading="lazy"
+                            >
+                        </figure>
                         <h3>Latte</h3>
                         <p class="description">Mild and velvety</p>
                         <p class="details">Smooth espresso combined with creamy steamed milk and a hint of foam.</p>
                         <span class="price">$4.75</span>
                     </article>
+
                     <article class="menu-item">
+                        <figure class="menu-item-image">
+                            <img 
+                                src="images/menu-americano.svg" 
+                                alt="Americano - Classic and full-bodied coffee" 
+                                width="280" 
+                                height="280"
+                                loading="lazy"
+                            >
+                        </figure>
                         <h3>Americano</h3>
                         <p class="description">Classic and full-bodied</p>
                         <p class="details">Double espresso shots topped with hot water for a robust flavor.</p>
                         <span class="price">$3.75</span>
                     </article>
+
                     <article class="menu-item">
+                        <figure class="menu-item-image">
+                            <img 
+                                src="images/menu-macchiato.svg" 
+                                alt="Macchiato - Espresso-forward drink with milk mark" 
+                                width="280" 
+                                height="280"
+                                loading="lazy"
+                            >
+                        </figure>
                         <h3>Macchiato</h3>
                         <p class="description">Espresso-forward</p>
                         <p class="details">Espresso "marked" with a small amount of steamed milk.</p>
                         <span class="price">$4.00</span>
                     </article>
+
                     <article class="menu-item">
+                        <figure class="menu-item-image">
+                            <img 
+                                src="images/menu-mocha.svg" 
+                                alt="Mocha - Sweet and indulgent espresso with chocolate" 
+                                width="280" 
+                                height="280"
+                                loading="lazy"
+                            >
+                        </figure>
                         <h3>Mocha</h3>
                         <p class="description">Sweet and indulgent</p>
                         <p class="details">Espresso with steamed milk and rich chocolate - a coffee lover's dessert.</p>
@@ -225,9 +291,9 @@
                 <div class="footer-section">
                     <h4>Follow Us</h4>
                     <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#" title="Visit our Facebook">Facebook</a></li>
+                        <li><a href="#" title="Follow us on Instagram">Instagram</a></li>
+                        <li><a href="#" title="Follow us on Twitter">Twitter</a></li>
                     </ul>
                 </div>
             </div>

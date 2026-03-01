@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="95" fill="#F5E6D3" stroke="#6F4E37" stroke-width="2"/>
+  
+  <!-- Coffee Cup Outline -->
+  <g stroke="#6F4E37" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Cup Body -->
+    <path d="M 60 70 L 65 150 Q 65 160 75 160 L 125 160 Q 135 160 135 150 L 140 70 Z"/>
+    
+    <!-- Cup Handle -->
+    <path d="M 140 85 Q 160 85 160 110 Q 160 135 140 135"/>
+    
+    <!-- Saucer -->
+    <ellipse cx="100" cy="165" rx="50" ry="10"/>
+  </g>
+  
+  <!-- Coffee inside cup -->
+  <defs>
+    <linearGradient id="coffeeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#A0826D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6F4E37;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <ellipse cx="100" cy="130" rx="35" ry="15" fill="url(#coffeeGradient)"/>
+  <path d="M 65 80 L 68 130 Q 68 135 75 135 L 125 135 Q 132 135 132 130 L 135 80 Z" 
+        fill="url(#coffeeGradient)" opacity="0.3"/>
+  
+  <!-- Decorative Steam Wisps -->
+  <g stroke="#D4A574" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M 85 65 Q 83 45 88 30"/>
+    <path d="M 100 60 Q 98 35 105 20"/>
+    <path d="M 115 65 Q 117 45 112 30"/>
+  </g>
+  
+  <!-- Coffee Shop Text -->
+  <text x="100" y="180" font-family="Georgia, serif" font-size="12" font-weight="bold" 
+        text-anchor="middle" fill="#6F4E37">COFFEE SHOP</text>
+</svg>

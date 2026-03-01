@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <!-- Background -->
+  <rect width="300" height="300" fill="#F5E6D3" rx="12"/>
+  
+  <!-- Decorative Corner Elements -->
+  <circle cx="20" cy="20" r="3" fill="#D4A574" opacity="0.3"/>
+  <circle cx="280" cy="20" r="3" fill="#D4A574" opacity="0.3"/>
+  <circle cx="20" cy="280" r="3" fill="#D4A574" opacity="0.3"/>
+  <circle cx="280" cy="280" r="3" fill="#D4A574" opacity="0.3"/>
+  
+  <defs>
+    <linearGradient id="macchiatoGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5C4A3A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3D2817;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Small Espresso Cup with Milk Marks -->
+  <g>
+    <!-- Cup Body -->
+    <path d="M 92 85 L 98 200 Q 98 215 110 215 L 190 215 Q 202 215 202 200 L 208 85 Z" 
+          fill="#F5E6D3" stroke="#6F4E37" stroke-width="2"/>
+    
+    <!-- Cup Handle -->
+    <path d="M 208 105 Q 235 105 235 150 Q 235 200 208 200" 
+          fill="none" stroke="#6F4E37" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Espresso base -->
+    <ellipse cx="150" cy="210" rx="53" ry="8" fill="url(#macchiatoGradient)"/>
+    <path d="M 100 90 L 105 205 Q 105 212 115 212 L 185 212 Q 195 212 200 205 L 205 90 Z" 
+          fill="url(#macchiatoGradient)"/>
+    
+    <!-- Milk Mark (characteristic macchiato spot) -->
+    <ellipse cx="150" cy="105" rx="50" ry="12" fill="#D4A574" opacity="0.5"/>
+    <ellipse cx="150" cy="100" rx="48" ry="10" fill="#E8DCC8" opacity="0.6"/>
+    
+    <!-- Mark details (small milk drops/spots) -->
+    <circle cx="130" cy="95" r="3" fill="#F5E6D3" opacity="0.8"/>
+    <circle cx="170" cy="95" r="3" fill="#F5E6D3" opacity="0.8"/>
+    <circle cx="150" cy="88" r="2.5" fill="#F5E6D3" opacity="0.7"/>
+    
+    <!-- Saucer -->
+    <ellipse cx="150" cy="220" rx="70" ry="12" fill="#E8DCC8" stroke="#6F4E37" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Text Label -->
+  <text x="150" y="260" font-family="Georgia, serif" font-size="20" font-weight="bold" 
+        text-anchor="middle" fill="#6F4E37">MACCHIATO</text>
+  
+  <!-- Decorative Elements -->
+  <circle cx="50" cy="50" r="25" fill="none" stroke="#D4A574" stroke-width="1" opacity="0.2"/>
+  <circle cx="250" cy="250" r="30" fill="none" stroke="#D4A574" stroke-width="1" opacity="0.2"/>
+</svg>
