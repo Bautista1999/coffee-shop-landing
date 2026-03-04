@@ -1,0 +1,18 @@
+COFFEE SHOP HEADER SCREENSHOT
+=============================
+Date Captured: 2024-01-15
+URL: https://coffee-shop-landing-jxxzzuxe1-juan-2472s-projects.vercel.app
+Filename: coffee_shop_header_screenshot_2024-01-15.png
+
+Description:
+This screenshot captures the header section of the Coffee Shop landing page,
+showing the navigation menu and hero section with the main call-to-action.
+
+Content Visible:
+- Navigation Bar: Logo, Home, About, Menu, Contact links
+- Hero Section: "Discover Premium Coffee" headline
+- Subheading: "Experience the finest artisanal coffee blends crafted for coffee lovers."
+- CTA Button: "Explore Now"
+
+Display Resolution: Desktop viewport (1280px width)
+Status: Successfully captured and saved
